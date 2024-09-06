@@ -125,7 +125,14 @@
     var b = document.getElementById("registerBtn");
     var x = document.getElementById("login");
     var y = document.getElementById("register");
-
+console.log(a);
+    a.addEventListener("click", function() {
+        login();
+    });
+    b.addEventListener("click", function() {
+        register();
+    });
+    
     function login() {
         x.style.left = "4px";
         y.style.right = "-520px";
